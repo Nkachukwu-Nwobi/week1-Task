@@ -4,63 +4,64 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overscroll-behavior: none;
   
 }
 
-/* #section-container{
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 900px;
-  width: 100%;
-  margin-top: 0px;
-  padding-top: 0px;
-
-} */
-
-.header{
+#header1{
   text-align: center;
   margin-top: 0px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   height: 90px;
   width: 100%;
   font-weight: bolder;
+  transform: translateX(-200%);
+  transition: all 3.5s ease-in-out;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 
  .header h1{
   color: #FFE81F;
   font-size:70px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  
  }
 
 #image-container{
   margin: 60px auto;
   width: 85%;
   padding-top: 0px;
-  background: rgba(0, 0, 0, 0.7);
-
+  background: rgba(0, 0, 0, 0.6);
+  transition: all 3.5s ease-in-out;
+  transform: translateX(110%);
+  flex-wrap: wrap;
   
 }
+
 #image-container img{
   height: 220px;
   width: 220px;
-  border-radius: 20px;
+  border-radius: 300px;
   border: 2px solid rgba(255, 232, 31);
   cursor: pointer;
+  margin-top: 10px;
+  
 }
 
-#image-container img:hover{ 
-  transform: scale(0.8) rotate(2deg);
-  border: 2px solid white;
-  transition: 0.3s ease;
+#image-container img:hover{  
+  transform: scale(0.8) rotate(360deg);   
+  border: 4px solid white;
+  transition: all 1s ease-in-out;
 
 }
 
-#image-container img:active{
-  transform: scale(1.7) rotate(0deg);
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
+img:hover h4{
+  color: red;
 }
 
 #container1{
@@ -68,41 +69,21 @@ html {
   display: flex;
   justify-content: space-around;
   margin-bottom: 20px;
+  flex-wrap: wrap;
   
+}
+
+.hidden{
+  display: none;
 }
 
 #container2{
   width: 100%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 
 }
-
-#fullBox{
-  width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.9);
-  display: none;
-  position: fixed;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
-}
-
-#fullBox img{
-  width: 40%;
-  height: 90vh;
-
-}
-
-#closeBtn{
-  position: absolute;
-  right: 6%;
-  top: 6%;
-  font-size: 50px;
-  cursor: pointer;
-}
-
 
 .overlay {
   width: 90%;
@@ -114,9 +95,8 @@ html {
   background-color:rgba(255, 232, 31);
   font-weight: bolder;
   border-radius: 20px;
-
-
 }
+
 p{
   font-size: 20px;
   text-align: center;
@@ -125,137 +105,47 @@ p{
 
 }
 
-/* #image-container:hover .overlay {
-  opacity: 1;
-} */
-
-
 #footer{
-  height: 100px;
+  height: 70px;
 }
 
 
-@media only screen and (max-width: 600px){
-
+@media only screen and (max-width: 480px){
   *{
-    background-size: cover;
-    width: 100%;
+  width: 100%;
   }
 
-  .header{
-    width: 100%;
+  #header1{
+    margin-bottom: 200px;
+    transition: none;
   }
 
   #section-container{
-  margin: 120px auto 50px auto;
-  }
-  #image-container{
     width: 100%;
-    margin-top: 30px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #container1{
-    display: block;
-    
-  }
-  #container2{
-    display: block;
-  }
-  #image-container img{
-    width: 100%;
-    margin: 30px auto;
-  }
-  .overlay{
-    width: 100%;
-  }
-  p{
-    font-size: 20px;
-    text-align: center;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  *{
-    background-size: cover;
-    width: 100%;
-  }
-
-  .header{
-    width: 100%;
-    text-align: center;
   }
 
   #image-container{
     width: 100%;
-    margin: 50px auto;
-
-  }
-
-  #container1{
-    display: block;
-  }
-
-  #container2{
-    display: block;
+    transition: none;
+    transform: none;
+  
   }
 
   #image-container img{
     width: 100%;
-    height: 550px;
-    margin: 20px 100px;
-    justify-content: space-around;
+    height: 350px;
+    transition: none;
+    transform: none;
+
   }
 
   #image-container img:hover{
+    transition: none;
     transform: none;
   }
 
-  .overlay{
-    display: none;
-  }
-
-
   p{
-    font-size: 50px;
-    text-align: center;
-    width: 100%;
-    margin-left: 100px;
+    margin-bottom: 30px;
   }
-
-}
-
-@media only screen and (max-width: 992px) {
-  *{
-    background-size: cover;
-    width: 100%;
-  }
-
-  .header{
-    width: 100%;
-  }
-  #section-container{
-    width: 100%;
-  }
-
-  #image-container{
-    width: 95%;
-    justify-content: space-around;
-  }
-
-  #image-container img{
-    width: 100%;
-}
-p{
-  font-size: 15px;
-  text-align: center;
-}
-#footer{
-  height: 500px;
-}
-#image-container img:hover{
-  transform: none;
-}
 
 }

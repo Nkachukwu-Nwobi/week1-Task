@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .text-container {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<img src="image1.jpg" alt="Image 1" onclick="toggleText('text1')">
+<div class="text-container" id="text1">
+  Text for Image 1.
+</div>
+
+<img src="image2.jpg" alt="Image 2" onclick="toggleText('text2')">
+<div class="text-container" id="text2">
+  Text for Image 2.
+</div>
+
+<img src="image3.jpg" alt="Image 3" onclick="toggleText('text3')">
+<div class="text-container" id="text3">
+  Text for Image 3.
+</div>
+
+<script>
+  function toggleText(textId) {
+    var textContainer = document.getElementById(textId);
+    var allTextContainers = document.querySelectorAll('.text-container');
+
+    for (var i = 0; i < allTextContainers.length; i++) {
+      if (allTextContainers[i] !== textContainer) {
+        allTextContainers[i].style.display = 'none';
+      }
+    }
+
+    if (textContainer.style.display === 'none' || textContainer.style.display === '') {
+      textContainer.style.display = 'block';
+    } else {
+      textContainer.style.display = 'none';
+    }
+  }
+</script>
+
+</body>
+</html>

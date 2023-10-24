@@ -6,96 +6,118 @@
     <link rel="stylesheet" href="./style/index.css">
     <title>Star Wars</title>
   </head>
-  <body style="background-image: url(./images/Star-wars1.webp);">
+  <body style="background-image: url(./images/Star-wars1.webp); background-position:top; background-repeat: no-repeat; background-size: cover;">
 
-    <!-- <div id="fullBox">
-      <img src="./images/beru.webp" id="fullImg" alt="">
-      <span style="color: gold;" onclick="closeImg()" id="closeBtn">x</span>
-    </div> -->
-
-    <header><div class="header"><h1>Star Wars Gallery</h1></div></header>
+    <header id="header1">
+      <div class="header"><h1>Choose Your Character!!</h1></div>
+    </header>
 
     <section id="section-container">  
       <div id="image-container">
           <div id="container1">
             <div id="image1" > 
-              <!-- onclick="openImg(this.src)" -->
               <h4 class="overlay">Luke Skywalker</h4>
-              <img src="./images/luke2.png" id="luke" alt="...">
-              <p id="name1"></p>
-              <p id="gender1"></p>
-              <p id="height1"></p>
+              <img src="./images/luke-skywalker.jpg" id="luke" alt="...">
+              
+              <div id="content1" class="hidden">
+                <p id="name1"></p>
+                <p id="gender1"></p>
+                <p id="height1"></p>
+              </div>
             </div>
             <div id="image2">
               <h4 class="overlay">C-3PO</h4>
               <img src="./images/c3po.webp" id="c3po" alt="...">
-              
-              <p id="name2"></p>
-              <p id="gender2"></p>
-              <p id="height2"></p>
+              <div id="content2" class="hidden">
+                <p id="name2"></p>
+                <p id="gender2"></p>
+                <p id="height2"></p>
+              </div>
+        
             </div>
             <div id="image3">
               <h4 class="overlay">R2-D2</h4>
               <img src="./images/r2d2.webp" id="r2d2" alt="...">
-              
+              <div id="content3" class="hidden" >
               <p id="name3"></p>
               <p id="gender3"></p>
               <p id="height3"></p>
+
+              </div>
+              
             </div>
             <div id="image4">
               <h4 class="overlay">Darth-Vader</h4>
-              <img src="./images/darth-vader.jpeg" id="darth" alt="...">
-              
+              <img src="./images/darthvader-preview.png" id="darth" alt="...">
+              <div id="content4" class="hidden">
               <p id="name4"></p>
               <p id="gender4"></p>
               <p id="height4"></p>
+              </div>
+              
             </div>
             <div id="image5">
               <h4 class="overlay">Leia Organa</h4>
-              <img src="./images/leia3 copy.png" id = "leia" alt="...">
+              <img src="./images/leia3.png" id = "leia" alt="...">
+              <div id="content5" class="hidden">
               <p id="name5"></p>
               <p id="gender5"></p>
               <p id="height5"></p>
+              </div>
+              
             </div>
           </div>
           
           <div id="container2">
             <div id="image6">
               <h4 class="overlay">Owen Lars</h4>
-              <img src="./images/owen.webp" id="owen" alt="...">
+              <img src="./images/OwenLars.png" id="owen" alt="...">
+              <div id="content6" class="hidden">
               <p id="name6"></p>
               <p id="gender6"></p>
               <p id="height6"></p>
+              </div>
+              
             </div>
             <div id="image7">
               <h4 class="overlay">Beru Whitesun Lars</h4>
-              <img src="./images/beru.webp" id="beru" alt="...">
-              
+              <img src="./images/beru.png" id="beru" alt="...">
+              <div id="content7" class="hidden">
               <p id="name7"></p>
               <p id="gender7"></p>
               <p id="height7"></p>
+              </div>
+              
             </div>
             <div id="image8">
               <h4 class="overlay">R5-D4</h4>
               <img src="./images/r5d4.webp" id="r5d4" alt="...">
+              <div id="content8" class="hidden">
               <p id="name8"></p>
               <p id="gender8"></p>
               <p id="height8"></p>
+              </div>
+            
             </div>
             <div id="image9">
               <h4 class="overlay">Biggs Darklighter</h4>
-              <img src="./images/biggs.jpeg" id="biggs" alt="...">
+              <img src="./images/biggs.png" id="biggs" alt="...">
+              <div id="content9" class="hidden">
               <p id="name9"></p>
               <p id="gender9"></p>
               <p id="height9"></p>
+              </div>
             </div>
+
             <div id="image10">
               <h4 class="overlay">Obi-wan Kenobi</h4>
-              <img src="./images/obiwan1.webp" id="obiwan" alt="...">
-              
+              <img src="./images/Obi-Wan Kenobi.png" id="obiwan" alt="...">
+              <div id="content10" class="hidden">
               <p id="name10"></p>
               <p id="gender10"></p>
               <p id="height10"></p>
+              </div>
+            
             </div>
 
           </div>  
